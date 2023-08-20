@@ -1,0 +1,68 @@
+@use "helpers" as *;
+
+.heading-h1 {
+  font-size: $font-montserrat;
+  font-size: 60px;
+  line-height: 70px;
+  padding: 140px 0 40px 0;
+  @media screen and (max-width: 992px) {
+    font-size: 45px;
+    padding: 50px 10px 20px 0;
+    line-height: 35px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px 10px 10px 0;
+    font-size: 35px;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 30px 10px 30px;
+  }
+}
+
+.text-green {
+  color: $green-color;
+}
+
+// oferta-block
+.heading-h2 {
+  font-family: $font-montserrat;
+  font-size: 48px;
+  line-height: 115%;
+  padding: 16px 0 32px 0;
+  @media screen and (max-width: 992px) {
+    font-size: 35px;
+  }
+}
+
+.heading-h3 {
+  font-family: $font-montserrat;
+  font-size: 28px;
+  line-height: 115%;
+  padding: 34px 0 10px;
+  @media screen and (max-width: 768px) {
+    padding: 12px 0 4px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.text-grey {
+  color: $grey-color;
+}
+
+.m-text {
+  font-size: 14px;
+}
+
+.padding-tb {
+  padding: 120px 0;
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
+}

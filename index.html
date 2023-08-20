@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/macy@2.5.0/dist/macy.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="icon" href="images/img-hero-block.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/img-hero-block.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>giarddesign</title>
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <svg width="114px" height="19px" class="logo">
+          <use xlink:href="images/logo.svg#logo"></use>
+        </svg>
+        <nav class="navbar navbar-expand-lg d-inline">
+          <div class="">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Oferta <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#projekty">Projekty</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#wizualizacje">Wizualizacje</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#realizacje">Realizacje</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">O firmie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Realizacje</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link search-icon" href="#">
+                    <i class="bi bi-search"></i>
+                  </a>
+                  <input
+                    type="text"
+                    class="search-field"
+                    id="searchField"
+                    style="display: none"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="d-flex flex-column flex-sm-row">
+        <div class=" col-md-6 col-sm-6 bg-beige hero-block">
+          <h1 class="heading-h1">
+            Nowoczesna <br />
+            aranżacja Twojego ogrodu
+          </h1>
+          <p>
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+            realizacji. <br />
+            Oferujemy kompleksowy zakres usług z indywidualnym podejściem do
+            każdego projektu.
+          </p>
+          <div class="pt-lg-5 pt-sm-2 pb-sm-2 button-block">
+            <button class="button-green me-3 me-md-1 mb-sm-2">
+              <a href="#kontakt" class="text-white">Skontaktuj się z nami</a>
+            </button>
+            <button class="button-transparent">
+              <a href="#realizacje" class="text-green"
+                >Zobacz nasze realizacje <i class="bi bi-arrow-down"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide col-md-6 col-sm-6 p-0"
+            data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img 
+                  src="images/img-hero-block.png"
+                  class="d-block w-100 h-100 "
+                  alt="img-hero-block"
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="images/img-hero-block.png"
+                  class="d-block w-100 h-100"
+                  alt="img-hero-block"
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  src="images/img-hero-block.png"
+                  class="d-block w-100 h-100"
+                  alt="img-hero-block"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev button-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next button-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <!-- oferta-block -->
+      <section class="bg-gray">
+        <div class="oferta-block">
+          <p class="text-green">Oferta</p>
+          <h2 class="heading-h2">Działamy kompleksowo</h2>
+          <p>
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
+            a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </p>
+        </div>
+        <div class="container">
+          <div
+            class="d-flex justify-content-between flex-column flex-sm-row pb-5 gap-4"
+          >
+            <div class="bg-white card">
+              <div class="card-body">
+                <img width="40px" height="40px" src="images/card1.svg" alt="card-icon1" class="img-oferta" />
+                <h3 class="heading-h3" id="projekty">Projekty</h3>
+                <p class="pb-5">
+                  Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                  wykorzystaniem istniejącej przestrzeni.
+                </p>
+                <a href="#" class="text-green"
+                  >Dowiedz się więcej <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="bg-white card">
+              <div class="card-body">
+                <img width="40px" height="40px" class="img-oferta"
+                  src="images/card2.svg"
+                  alt="card-icon2"
+                />
+                <h3 class="heading-h3" id="wizualizacje">Wizualizacje</h3>
+                <p class="pb-5">
+                  Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                  spaceru animowanego w technologii 3D.
+                </p>
+                <a href="#" class="text-green"
+                  >Dowiedz się więcej <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="bg-white card">
+              <div class="card-body">
+                <img width="40px" height="40px" src="images/card3.svg" alt="card-icon3" class="img-oferta" />
+                <h3 class="heading-h3" id="realizacje">Realizacje</h3>
+                <p class="pb-5">
+                  Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań
+                  i zaawansowanych technologii.
+                </p>
+                <a href="#" class="text-green"
+                  >Dowiedz się więcej <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- o firmie block -->
+      <section>
+        <div class="d-flex flex-sm-row flex-column">
+          <img
+            class="flex-fill img-fluid img-o-firmie"
+            src="images/photo-o-firmie.png"
+            alt=""
+          />
+          <div class="bg-green flex-fill">
+            <div class="container firma-content">
+              <p class="text-white small-text">O firmie</p>
+              <h2 class="heading-h2 text-grey">Tworzymy z pasją</h2>
+              <p class="text-white">
+                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                wykwalifikowani projektanci oraz architekci, których zadaniem
+                jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                małoobsługowe, dostosowane do współczesnego trybu życia.
+              </p>
+              <button class="button-transparent button-white mb-4">
+                <a href="#" class="text-white"
+                  >Poznaj nas bliżej <i class="bi bi-arrow-right"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Realizacje block -->
+      <section class="bg-beige">
+        <div class="container">
+          <p class="text-green small-text pading-100">Realizacje</p>
+          <h2 class="heading-h2 pb-5">Nasze projekty</h2>
+        </div>
+        <div class="gallery ">
+          <div class="image-overlay"></div>
+          <div class="images">
+            <img src="images/gallery-1.png" class="img-realizacje" alt="gallery-1" />
+            <img src="images/gallery-2.png" class="img-realizacje" alt="gallery-2" />
+            <img src="images/gallery-3.png" class="img-realizacje" alt="gallery-3" />
+            <img src="images/gallery-4.png" class="img-realizacje" alt="gallery-4" />
+            <img src="images/gallery-5.png" class="img-realizacje" alt="gallery-5" />
+            <img src="images/gallery-6.png" class="img-realizacje" alt="gallery-6" />
+            <img src="images/gallery-7.png" class="img-realizacje" alt="gallery-7" />
+            <img src="images/gallery-8.png" class="img-realizacje" alt="gallery-8" />
+            <img src="images/gallery-9.png" class="img-realizacje" alt="gallery-9" />
+            <img src="images/gallery-2.png" class="img-realizacje" alt="gallery-2" />
+          </div>
+        </div>
+        <div class="pb-5"    id="realizacje">
+          <button id="showMoreButton" class="button-show-more">
+            Rozwiń <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close"><i class="bi bi-x-lg"></i></span>
+          <div class="modal-content">
+            <img id="modalImage" src="images/gallery-2.png" alt="modal-image" />
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section>
+        <div class="contact container d-flex justify-content-around">
+          <div>
+            <h2 class="heading-h2 text-grey padding-tb">
+              Zostańmy w kontakcie! <br />
+              Znajdziesz nas na Instagramie.
+            </h2>
+          </div>
+          <div class="padding-tb">
+            <p class="text-grey">
+              Śledź nasze <br />
+              najnowsze realizacje!
+            </p>
+            <button class="mt-4 button-transparent bg-white">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-green"
+                >Instagram</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-black" id="kontakt">
+      <div class="container">
+        <div class="d-flex pt-5 flex-column flex-md-row">
+       <div class="me-auto p-2">
+           <svg width="114px" height="19px" class="footer__logo">
+             <use xlink:href="images/giarddesign.svg#giarddesign"></use>
+           </svg>
+       </div>
+          <p class="text-grey p-2 me-4">Daj znać, co możemy dla Ciebie zrobić!</p>
+          <div>
+            <button class="button-green p-2">
+              <a href="#" class="text-grey">Skontaktuj się z nami</a>
+            </button>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="d-flex justify-content-between flex-column flex-lg-row align-self-center">
+          <ul class="d-flex gap-5 pb-lg-5">
+            <li><a href="#" class="text-grey m-text">Kontakt</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" class="text-grey m-text">Instagram</a></li>
+            <li><a href="https://pl-pl.facebook.com/" target="_blank" class="text-grey m-text">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/feed/" target="_blank" class="text-grey m-text">LinkedIn</a></li>
+          </ul>
+          <div class="d-flex gap-5">
+            <a href="+48000-000-000" class="text-grey m-text">000-000-000</a>
+            <a href="mailto:giarddesign@kontakt.pl" class="text-grey m-text">giarddesign@kontakt.pl</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between padding-tb">
+          <p class="text-grey">Prawa zastrzeżone © 2022</p>
+          <div class="d-flex">
+            <p class="text-grey">made by</p>
+            <svg width="114px" height="19px" class="footer__logo">
+              <use xlink:href="images/logo-full-light.svg#logo"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scrypt.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
